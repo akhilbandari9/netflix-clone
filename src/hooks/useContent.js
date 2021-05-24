@@ -18,9 +18,9 @@ const useContent = (target) => {
 				setContent(allContent)
 			})
 			.catch((error) => console.error(error))
-
-		return () => {}
+		//eslint-disable-next-line
 	}, [])
+
 	return { [target]: content }
 }
 

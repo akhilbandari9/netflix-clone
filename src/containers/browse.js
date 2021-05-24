@@ -3,7 +3,7 @@ import SelectProfileContainer from './profiles'
 import { FirebaseContext } from '../context/firebase'
 import FooterContainer from './footer'
 import { Card, Header, Loading, Player } from '../components'
-import { HOME, SIGNIN } from '../constants/routes'
+import { HOME } from '../constants/routes'
 import { Logo } from '../components/header/styles/header'
 import Fuse from 'fuse.js'
 
@@ -40,6 +40,7 @@ const BrowseContainer = ({ slides }) => {
 		} else {
 			setSlideRows(slides[category])
 		}
+		//eslint-disable-next-line
 	}, [searchTerm])
 
 	return profile.displayName ? (
