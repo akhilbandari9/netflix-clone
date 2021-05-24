@@ -44,11 +44,13 @@ const Signin = () => {
 					<Form.Base onSubmit={handleSignIn} method='POST'>
 						<Form.Input
 							placeholder='Email Address'
+							type='email'
 							onChange={({ target }) => setEmail(target.value)}
 							value={email}
 						/>
 						<Form.Input
 							placeholder='Password'
+							type='password'
 							onChange={({ target }) => setPassword(target.value)}
 							value={password}
 						/>

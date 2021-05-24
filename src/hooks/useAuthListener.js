@@ -22,6 +22,7 @@ const useAuthListener = () => {
 		})
 
 		return () => listener()
+		//eslint-disable-next-line
 	}, [])
 
 	return { user }
