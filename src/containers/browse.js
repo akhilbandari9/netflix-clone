@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from 'react'
+import Fuse from 'fuse.js'
 import SelectProfileContainer from './profiles'
-import { FirebaseContext } from '../context/firebase'
 import FooterContainer from './footer'
+import { FirebaseContext } from '../context/firebase'
 import { Card, Header, Loading, Player } from '../components'
 import { HOME } from '../constants/routes'
 import { Logo } from '../components/header/styles/header'
-import Fuse from 'fuse.js'
 
 const BrowseContainer = ({ slides }) => {
 	const [profile, setProfile] = useState({})

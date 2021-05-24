@@ -159,10 +159,10 @@ export const Item = styled.div`
 	margin-right: 5px;
 	position: relative;
 	cursor: pointer;
-	transition: transfrom 0.2s;
+	transition: transform 0.3s;
 
 	&:hover {
-		transform: scale(1.3);
+		transform: scale(1.25);
 		z-index: 99;
 	}
 
